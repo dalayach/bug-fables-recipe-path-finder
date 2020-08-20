@@ -40,7 +40,7 @@ HUSTLE_CANDY,BAG_OF_FLOUR,HUSTLE_BERRY,BugFablesCook.ALL,restores 4 tp and grant
 SPICY_CANDY,BAG_OF_FLOUR,SPICY_BERRY,BugFablesCook.ALL,restores 5 tp and boosts attack for 2 turns.
 BURLY_CANDY,BAG_OF_FLOUR,BURLY_BERRY,BugFablesCook.ALL,restores 5 tp and boosts defense for 2 turns.
 BERRY_JAM,SPICY_BERRY,BURLY_BERRY,BugFablesCook.ALL,raises an ally's attack and defense by 1 for 2 turns.
-HOT_DRINK,CLEAR_WATER,HUSTLE_BERRY,BugFablesCook.ALL,restores 2 hp,cures status effects,and grants an extra turn.
+HOT_DRINK,CLEAR_WATER,HUSTLE_BERRY,BugFablesCook.ALL,restores 2 hp and cures status effects and grants an extra turn.
 PLAIN_TEA,CLEAR_WATER,CRUNCHY_LEAF,BugFablesCook.ALL,restores 4 hp and cures any status effect.
 SPICY_TEA,PLAIN_TEA,SPICY_BERRY,BugFablesCook.ALL,cures all status effects and raises attack by 1 for 2 turns.
 BURLY_TEA,PLAIN_TEA,BURLY_BERRY,BugFablesCook.ALL,cures all status effects and raises defense by 1 for 2 turns.
