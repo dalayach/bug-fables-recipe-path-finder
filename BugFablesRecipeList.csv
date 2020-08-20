@@ -66,5 +66,5 @@ BERRY_SMOOTHIE,DARK_CHERRIES,TANGY_BERRY,BugFablesCook.ALL,fully restores all tp
 MIRACLE_SHAKE,DARK_CHERRIES,MAGIC_SEED,BugFablesCook.ALL,revives all fallen allies and restores 6 hp to the entire party.
 TANGY_CARPACCIO,TANGY_BERRY,null,BugFablesCook.KUT,restores 12hp to the party.
 CRISBEE_DONUT,GLAZED_HONEY,BAG_OF_FLOUR,BugFablesCook.CRISBEE,recovers 12tp.
-QUEENS_DINNER,TANGY_CARPACCIO,CRISBEE_DONUT,BugFablesCook.FRY,recovers 15hp to everyone,15tp,and heals all status effects.
+QUEENS_DINNER,TANGY_CARPACCIO,CRISBEE_DONUT,BugFablesCook.FRY,recovers 15hp to everyone and 15tp and heals all status effects.
 BIG_MISTAKE,MISTAKE,null,BugFablesCook.ALL,poisons the user for a long time and lowers their hp to 1.
