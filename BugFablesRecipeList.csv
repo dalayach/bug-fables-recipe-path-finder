@@ -14,7 +14,7 @@ SUCCULENT_PLATTER	(	SUCCULENT_BERRY	, 	null	, 	BugFablesCook.	FRY	),	// 	restore
 SUCCULENT_COOKIES	(	SUCCULENT_BERRY	, 	BAG_OF_FLOUR	, 	BugFablesCook.	ALL	),	// 	restores 3 hp and recovers 2 tp for 3 turns.
 BERRY_JUICE	(	HARD_SEED	, 	CLEAR_WATER	, 	BugFablesCook.	ALL	),	// 	restores 5 hp and cures any status effect.
 MUSHROOM_SKEWER	(	MUSHROOM	, 	DANGER_SHROOM	, 	BugFablesCook.	ALL	),	// 	restores 6 hp and 3 tp.
-HEARTY_BREAKFAST	(	MUSHROOM	, 	APHID_EGG	, 	BugFablesCook.	ALL	),	// 	restores 5 hp, 3 tp, and cures poison.
+HEARTY_BREAKFAST	( MUSHROOM  , APHID_EGG , BugFablesCook.  ALL ),  //  restores 5 hp, 3 tp, and cures poison.
 MUSHROOM_SALAD	(	CRUNCHY_LEAF	, 	MUSHROOM	, 	BugFablesCook.	ALL	),	// 	restores 8 hp and cures poison.
 SWEET_DEW	(	APHID_DEW	, 	HONEY_DROP	, 	BugFablesCook.	ALL	),	// 	restores 9 tp and cures sleep.
 BAKED_YAM	(	DANGER_SPUD	, 	null	, 	BugFablesCook.	ALL	),	// 	restores 7 hp.
