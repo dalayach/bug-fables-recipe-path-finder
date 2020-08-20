@@ -1,0 +1,70 @@
+MISTAKE	(	APHID_EGG	, 	CLEAR_WATER	, 	BugFablesCook.	ALL	),	// 	recovers 1 tp and poisons the user.
+LEAF_SALAD	(	CRUNCHY_LEAF	, 	CRUNCHY_LEAF	, 	BugFablesCook.	ALL	),	// 	restores 6 hp.
+GLAZED_HONEY	(	HONEY_DROP	, 	null	, 	BugFablesCook.	ALL	),	// 	restores 8 tp.
+ABOMIHONEY	(	HONEY_DROP	, 	HONEY_DROP	, 	BugFablesCook.	ALL	),	// 	'restores 12tp and reduces the user''s hp to 1.'
+COOKED_SHROOM	(	MUSHROOM	, 	null	, 	BugFablesCook.	ALL	),	// 	restores 6 hp. cures poison.
+COOKED_DANGER	(	DANGER_SHROOM	, 	null	, 	BugFablesCook.	ALL	),	// 	restores 5 tp and poisons the user.
+SWEET_SHROOM	(	MUSHROOM	, 	HONEY_DROP	, 	BugFablesCook.	ALL	),	// 	restores 5 hp and 4 tp.
+SWEET_DANGER	(	DANGER_SHROOM	, 	HONEY_DROP	, 	BugFablesCook.	ALL	),	// 	restores 7 tp and poisons the user.
+FRIED_EGG	(	APHID_EGG	, 	null	, 	BugFablesCook.	ALL	),	// 	restores 6 hp.
+LEAF_OMELET	(	CRUNCHY_LEAF	, 	APHID_EGG	, 	BugFablesCook.	ALL	),	// 	restores 9 hp.
+HONEY_LEAF	(	CRUNCHY_LEAF	, 	HONEY_DROP	, 	BugFablesCook.	ALL	),	// 	restores 5 hp and 5 tp.
+ROASTED_BERRIES	(	HARD_SEED	, 	null	, 	BugFablesCook.	ALL	),	// 	restores 2 hp to the entire party.
+SUCCULENT_PLATTER	(	SUCCULENT_BERRY	, 	null	, 	BugFablesCook.	FRY	),	// 	restores 2 hp to the party for 2 turns.
+SUCCULENT_COOKIES	(	SUCCULENT_BERRY	, 	BAG_OF_FLOUR	, 	BugFablesCook.	ALL	),	// 	restores 3 hp and recovers 2 tp for 3 turns.
+BERRY_JUICE	(	HARD_SEED	, 	CLEAR_WATER	, 	BugFablesCook.	ALL	),	// 	restores 5 hp and cures any status effect.
+MUSHROOM_SKEWER	(	MUSHROOM	, 	DANGER_SHROOM	, 	BugFablesCook.	ALL	),	// 	restores 6 hp and 3 tp.
+HEARTY_BREAKFAST	(	MUSHROOM	, 	APHID_EGG	, 	BugFablesCook.	ALL	),	// 	restores 5 hp, 3 tp, and cures poison.
+MUSHROOM_SALAD	(	CRUNCHY_LEAF	, 	MUSHROOM	, 	BugFablesCook.	ALL	),	// 	restores 8 hp and cures poison.
+SWEET_DEW	(	APHID_DEW	, 	HONEY_DROP	, 	BugFablesCook.	ALL	),	// 	restores 9 tp and cures sleep.
+BAKED_YAM	(	DANGER_SPUD	, 	null	, 	BugFablesCook.	ALL	),	// 	restores 7 hp.
+SPICY_FRIES	(	DANGER_SPUD	, 	SPICY_BERRY	, 	BugFablesCook.	ALL	),	// 	restores 4 hp and boosts ally attack for 2 turns.
+BURLY_CHIPS	(	DANGER_SPUD	, 	BURLY_BERRY	, 	BugFablesCook.	ALL	),	// 	restores 5 hp and boosts defense for 2 turns.
+DANGER_DISH	(	DANGER_SPUD	, 	DANGER_SHROOM	, 	BugFablesCook.	ALL	),	// 	restores 2 hp and 2 tp but poisons the user for a long time.
+SHAVED_ICE	(	MAGIC_ICE	, 	null	, 	BugFablesCook.	ALL	),	// 	restores 4 hp and 4 tp but may freeze the user.
+COLD_SALAD	(	MAGIC_ICE	, 	CRUNCHY_LEAF	, 	BugFablesCook.	ALL	),	// 	restores 8 hp but may freeze the user.
+ICE_CREAM	(	MAGIC_ICE	, 	APHID_DEW	, 	BugFablesCook.	ALL	),	// 	restores 10tp but may freeze the user.
+HONEY_ICE_CREAM	(	MAGIC_ICE	, 	HONEY_DROP	, 	BugFablesCook.	ALL	),	// 	restores 5 hp and 10tp but may freeze the user.
+DRY_BREAD	(	BAG_OF_FLOUR	, 	null	, 	BugFablesCook.	ALL	),	// 	restores 3 hp and 3 tp.
+NUTTY_CAKE	(	BAG_OF_FLOUR	, 	HARD_SEED	, 	BugFablesCook.	ALL	),	// 	restores 3 hp and 6 tp.
+POISON_CAKE	(	BAG_OF_FLOUR	, 	DANGER_SHROOM	, 	BugFablesCook.	ALL	),	// 	restores 11tp but poisons the user for 4 turns.
+FROST_PIE	(	BAG_OF_FLOUR	, 	MAGIC_ICE	, 	BugFablesCook.	ALL	),	// 	restores 6 hp and 10tp but may freeze the user.
+YAM_BREAD	(	BAG_OF_FLOUR	, 	DANGER_SPUD	, 	BugFablesCook.	FRY	),	// 	restores 8 hp.
+SHOCK_CANDY	(	BAG_OF_FLOUR	, 	AGARIC_SHROOM	, 	BugFablesCook.	ALL	),	// 	restores 9 hp but paralyzes the user.
+MUSHROOM_GUMMIES	(	BAG_OF_FLOUR	, 	MUSHROOM	, 	BugFablesCook.	ALL	),	// 	restores 3 hp to the whole party and cures poison.
+SWEET_PUDDING	(	BAG_OF_FLOUR	, 	APHID_EGG	, 	BugFablesCook.	ALL	),	// 	recovers 6 hp and 6 tp.
+LEAF_CROISSANT	(	BAG_OF_FLOUR	, 	CRUNCHY_LEAF	, 	BugFablesCook.	ALL	),	// 	restores 5 hp and 4 tp. cures poison.
+HONEY_PANCAKES	(	BAG_OF_FLOUR	, 	HONEY_DROP	, 	BugFablesCook.	ALL	),	// 	restores 1 hp and 6 tp to the whole party.
+DROWSY_CAKE	(	BAG_OF_FLOUR	, 	NUMBNAIL_DART	, 	BugFablesCook.	ALL	),	// 	restores 7 hp and 7 tp but puts the user to sleep.
+HUSTLE_CANDY	(	BAG_OF_FLOUR	, 	HUSTLE_BERRY	, 	BugFablesCook.	ALL	),	// 	restores 4 tp and grants an extra turn.
+SPICY_CANDY	(	BAG_OF_FLOUR	, 	SPICY_BERRY	, 	BugFablesCook.	ALL	),	// 	restores 5 tp and boosts attack for 2 turns.
+BURLY_CANDY	(	BAG_OF_FLOUR	, 	BURLY_BERRY	, 	BugFablesCook.	ALL	),	// 	restores 5 tp and boosts defense for 2 turns.
+BERRY_JAM	(	SPICY_BERRY	, 	BURLY_BERRY	, 	BugFablesCook.	ALL	),	// 	'raises an ally''s attack and defense by 1 for 2 turns.'
+HOT_DRINK	(	CLEAR_WATER	, 	HUSTLE_BERRY	, 	BugFablesCook.	ALL	),	// 	restores 2 hp, cures status effects, and grants an extra turn.
+PLAIN_TEA	(	CLEAR_WATER	, 	CRUNCHY_LEAF	, 	BugFablesCook.	ALL	),	// 	restores 4 hp and cures any status effect.
+SPICY_TEA	(	PLAIN_TEA	, 	SPICY_BERRY	, 	BugFablesCook.	ALL	),	// 	cures all status effects and raises attack by 1 for 2 turns.
+BURLY_TEA	(	PLAIN_TEA	, 	BURLY_BERRY	, 	BugFablesCook.	ALL	),	// 	cures all status effects and raises defense by 1 for 2 turns.
+APHID_SHAKE	(	APHID_DEW	, 	APHID_EGG	, 	BugFablesCook.	ALL	),	// 	'raises an ally''s attack and defense by 1 for 1 turn.'
+SQUASH_PUREE	(	SQUASH	, 	null	, 	BugFablesCook.	ALL	),	// 	restores 2 tp and also restores 2 tp for 2 turns.
+SQUASH_CANDY	(	SQUASH	, 	BAG_OF_FLOUR	, 	BugFablesCook.	ALL	),	// 	restores 5 tp then 2 tp for 3 turns.
+SQUASH_TART	(	SQUASH	, 	SPICY_BERRY	, 	BugFablesCook.	ALL	),	// 	increases attack by 1 and gives tp regen for 3 turns.
+PLUMPLING_PIE	(	SQUASH	, 	BURLY_BERRY	, 	BugFablesCook.	ALL	),	// 	increases defense by 1 and gives tp regen for 3 turns.
+TANGY_JAM	(	TANGY_BERRY	, 	HONEY_DROP	, 	BugFablesCook.	ALL	),	// 	restores 12tp and cures paralysis.
+TANGY_JUICE	(	TANGY_BERRY	, 	CLEAR_WATER	, 	BugFablesCook.	ALL	),	// 	restores 8 tp and cures status effects.
+TANGY_PIE	(	TANGY_BERRY	, 	BAG_OF_FLOUR	, 	BugFablesCook.	ALL	),	// 	restores 4 hp to an ally and recovers 2 tp for 5 turns.
+SPICY_BOMB	(	HARD_SEED	, 	SPICY_BERRY	, 	BugFablesCook.	ALL	),	// 	deals 5 damage to the target and 3 damage to adjacent enemies.
+BURLY_BOMB	(	HARD_SEED	, 	BURLY_BERRY	, 	BugFablesCook.	ALL	),	// 	toss it at enemies to lower their defense.
+POISON_BOMB	(	SPICY_BOMB	, 	DANGER_SHROOM	, 	BugFablesCook.	ALL	),	// 	toss it at enemies to poison them.
+SLEEP_BOMB	(	SPICY_BOMB	, 	NUMBNAIL_DART	, 	BugFablesCook.	ALL	),	// 	toss it at enemies to make them sleepy.
+NUMB_BOMB	(	SPICY_BOMB	, 	AGARIC_SHROOM	, 	BugFablesCook.	ALL	),	// 	toss it at enemies to paralyze them.
+FROST_BOMB	(	SPICY_BOMB	, 	MAGIC_ICE	, 	BugFablesCook.	ALL	),	// 	toss it at enemies to freeze them.
+CLEAR_BOMB	(	SLEEP_BOMB	, 	CLEAR_WATER	, 	BugFablesCook.	ALL	),	// 	clears all status effects from everyone in battle.
+ABOMBINATION	(	SLEEP_BOMB	, 	ABOMIHONEY	, 	BugFablesCook.	FRY	),	// 	deals 10damage to everyone (can ko party members) and recovers 10tp.
+CHERRY_BOMBS	(	SPICY_BOMB	, 	DARK_CHERRIES	, 	BugFablesCook.	ALL	),	// 	cause huge damage to enemies plus a random status effect.
+CHERRY_PIE	(	DARK_CHERRIES	, 	BAG_OF_FLOUR	, 	BugFablesCook.	ALL	),	// 	recovers 8 hp to the party and 5 tp.
+BERRY_SMOOTHIE	(	DARK_CHERRIES	, 	TANGY_BERRY	, 	BugFablesCook.	ALL	),	// 	fully restores all tp.
+MIRACLE_SHAKE	(	DARK_CHERRIES	, 	MAGIC_SEED	, 	BugFablesCook.	ALL	),	// 	revives all fallen allies and restores 6 hp to the entire party.
+TANGY_CARPACCIO	(	TANGY_BERRY	, 	null	, 	BugFablesCook.	KUT	),	// 	restores 12hp to the party.
+CRISBEE_DONUT	(	GLAZED_HONEY	, 	BAG_OF_FLOUR	, 	BugFablesCook.	CRISBEE	),	// 	recovers 12tp.
+QUEENS_DINNER	(	TANGY_CARPACCIO	, 	CRISBEE_DONUT	, 	BugFablesCook.	FRY	),	// 	recovers 15hp to everyone, 15tp, and heals all status effects.
+BIG_MISTAKE	(	MISTAKE	, 	null	, 	BugFablesCook.	ALL	),	// 	poisons the user for a long time and lowers their hp to 1.
