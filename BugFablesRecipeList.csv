@@ -1,3 +1,5 @@
+Food Item, Ingredient 1, Ingredient 2, Cook, Special Effects
+
 MISTAKE,APHID_EGG,CLEAR_WATER,BugFablesCook.ALL,recovers 1 tp and poisons the user.
 LEAF_SALAD,CRUNCHY_LEAF,CRUNCHY_LEAF,BugFablesCook.ALL,restores 6 hp.
 GLAZED_HONEY,HONEY_DROP,null,BugFablesCook.ALL,restores 8 tp.
