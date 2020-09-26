@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" href="bug-fables-recipe-path-finder.jnlp">
+	<information>
+		<title>bug-fables-recipe-path-finder.jnlp</title>
+		<vendor>bug-fables-recipe-path-finder.jnlp</vendor>
+		<homepage href="http://localhost:8080/" />
+	</information>
+	<security>
+		<all-permissions/>
+	</security>
+	<resources>
+		<j2se version="1.8+" />
+		<jar href="bug-fables-recipe-path-finder.jar" />
+	</resources>
+	<application-desc main-class="io.github.dalayach.Main" />
+</jnlp>
