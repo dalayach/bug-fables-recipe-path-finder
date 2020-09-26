@@ -1,5 +1,5 @@
-!1514;s
-A
+!1632;s
+J
 SAU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
 SCU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
 S+U0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
@@ -12,15 +12,51 @@ s#i0
 s#k0
 s#j0
 s#l0
-!260;g
+s#m0src/main/java
+s#n0src/main/java
+s#o0temp
+s#p0doc
+s#s0src/main/res
+s#q0src/test/java
+s#r0bin
+s#t0help
+s#w0canvases
+!116;u
+a1	b68	c255	f%\011bug-fables-recipe-path-finder.jar	g%\011bug-fables-recipe-path-finder.zip	hManifest-Version\0111.0!851;g
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sGUIIntro.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sMain.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sSpringUtilities.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesFoodItem.java
-%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java
-!260;f
+%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sCardUseYourOwnItems.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sCardHowMuchInventorySpace.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sCardRecipeList.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesRecipe.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sCardAllowFoodItemReuse.java
+!851;f
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sGUIIntro.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sMain.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sSpringUtilities.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesFoodItem.java
-%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java
-!263;t
-jgrCheckstyle0xr	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java	1597643263665:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java	1597884888561:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesFoodItem.java	1597887178758:P	
+%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sCardUseYourOwnItems.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sCardHowMuchInventorySpace.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sCardRecipeList.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesRecipe.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sCardAllowFoodItemReuse.java
+!418;l
+%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesShopTest.java
+%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesPathFinderTest.java
+%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesCookTest.java
+%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesFoodItemTest.java
+%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesRecipeTest.java
+%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesLocationTest.java
+!2730;t
+jgrJUnit0xr	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java	1599195800307:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesPathFinderTest.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java	1599195800307:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesCookTest.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesShopTest.java	1599195800307:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesPathFinderTest.java	1599195800307:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesCookTest.java	1599195800307:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesFoodItemTest.java	1599195800307:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesFoodItem.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesRecipe.java	1599102686065:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesRecipeTest.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesLocationTest.java	1599195800307:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesFoodItem.java	1599195800307:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesFoodItemTest.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java	1599195800307:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesLocationTest.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java	1599195800307:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesShopTest.java	
+jgrCheckstyle0xr	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java	1599195793625:P	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesShopTest.java	1599195793625:P	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesFoodItemTest.java	1599195793625:P	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesPathFinderTest.java	1599195793625:P	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesCookTest.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesRecipe.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sMain.java	1599195793625:P	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesLocationTest.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesFoodItem.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java	1599195793625:P	

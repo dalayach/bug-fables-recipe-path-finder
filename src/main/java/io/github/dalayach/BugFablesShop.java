@@ -1,5 +1,9 @@
 package io.github.dalayach;
 
+import java.util.Arrays;
+import java.util.EnumSet;
+import java.util.Set;
+
 /**
  *
  * Enum containing the shops in Bug Fables.
@@ -183,14 +187,141 @@ public enum BugFablesShop
    
 	/** Location of the shop. */
    private BugFablesLocation location;
-   /** Array of purchasable items at each shop. */
-   private BugFablesFoodItem[] purchasableItems;
+   /** Set of purchasable items at each shop. Empty for now. EnumSet for space efficiency. */
+   private Set<BugFablesFoodItem> purchasableItems = EnumSet.noneOf(BugFablesFoodItem.class);
    
+   /** Constructor. */
    BugFablesShop(BugFablesLocation location, BugFablesFoodItem... purchasableItems)
    {
    
       this.location = location;
-      this.purchasableItems = purchasableItems;
+      /** EnumSet makes this very space efficient. */
+      this.purchasableItems = EnumSet.copyOf(Arrays.asList(purchasableItems));
+   
+   }
+   
+   /** Returns the location for this shop. */
+   public BugFablesLocation getLocation()
+   {
+   
+      return this.location;
+   
+   }
+	
+   /** Returns the set of purchasable foodItems for this shop. */
+   public Set<BugFablesFoodItem> getPurchasableItems()
+   {
+   
+      return this.purchasableItems;
+   
+   }
+   
+   /** Returns a Set of shops located at any of the given locations. */
+   protected static Set<BugFablesShop> findShopsByLocations(Set<BugFablesLocation> locations)
+   {
+   
+      Set<BugFablesShop> shops = EnumSet.noneOf(BugFablesShop.class);
+   
+      if (locations != null)
+      {
+      
+         for (BugFablesLocation location : locations)
+         {
+         
+            shops.addAll(BugFablesShop.findShopsByLocation(location));
+         
+         }
+      
+      }
+      
+      return shops;
+   
+   }
+   
+	/**
+	 * 
+	 * Finds shops located at the location in the parameter.
+	 * 
+	 * @param	location	location we want to find shops within.
+	 * @return	returns the set of shops that exist at the location specified in the parameters. It's a
+	 *					Set because we don't expect any duplicates.
+	 *
+	 */
+   protected static Set<BugFablesShop> findShopsByLocation(BugFablesLocation location)
+   {
+   
+      Set<BugFablesShop> shops = EnumSet.noneOf(BugFablesShop.class);
+   
+      if (location != null)
+      {
+      
+         for (BugFablesShop shop : BugFablesShop.values())
+         {
+         
+            if (shop.getLocation() == location)
+            {
+            
+               shops.add(shop);
+            
+            }
+         
+         }
+      
+      }
+      
+      return shops;
+   
+   }
+   
+   /** Returns a Set of shops containing any of the given foodItems. */
+   protected static Set<BugFablesShop> findShopsByPurchasableItems(Set<BugFablesFoodItem> foodItems)
+   {
+   
+      Set<BugFablesShop> shops = EnumSet.noneOf(BugFablesShop.class);
+   
+      if (foodItems != null)
+      {
+      
+         for (BugFablesFoodItem foodItem : foodItems)
+         {
+         
+            shops.addAll(BugFablesShop.findShopsByPurchasableItem(foodItem));
+         
+         }
+      
+      }
+   
+      return shops;
+   
+   }
+   
+   /** Returns a Set of shops containing the given foodItem. */
+   protected static Set<BugFablesShop> findShopsByPurchasableItem(BugFablesFoodItem foodItem)
+   {
+   
+      Set<BugFablesShop> shops = EnumSet.noneOf(BugFablesShop.class);
+   
+      for (BugFablesShop shop : BugFablesShop.values())
+      {
+      
+         if (shop.getPurchasableItems().contains(foodItem))
+         {
+         
+            shops.add(shop);
+         
+         }
+      
+      }
+   
+      return shops;
+   
+   }
+   
+   /** Returns a string representation in the format of name(location, purchasableItems). */
+   public String toString()
+   {
+   
+      return this.name() + "(" + this.location + ", " + this.purchasableItems.toString() + ")";
    
    }
 
