@@ -10,9 +10,6 @@ import java.util.EnumSet;
  * 
  * Enum containing all of the food items relevant for unlocking all entries in the Recipe Book.
  * 
- * As you can see, the current implementation of this class is resembling a Binary Tree, so it may benefit us to use some
- * BST algorithms.
- * 
  */
 public enum BugFablesFoodItem
 {
@@ -235,7 +232,7 @@ public enum BugFablesFoodItem
    }
    
    /** Returns a Set of foodItems purchasable at the given shops. */
-   protected static Set<BugFablesFoodItem> findPurchasableItemsByShop(Set<BugFablesShop> shops)
+   protected static Set<BugFablesFoodItem> findPurchasableItemsByShops(Set<BugFablesShop> shops)
    {
    
       Set<BugFablesFoodItem> foodItems = EnumSet.noneOf(BugFablesFoodItem.class);
@@ -325,6 +322,30 @@ public enum BugFablesFoodItem
       }
    
       Collections.sort(foodItems, String.CASE_INSENSITIVE_ORDER);
+      
+      return foodItems;
+   
+   }
+   
+   /** Returns a set of BugFablesFoodItem that is not used in any recipe, but is also not the result of a recipe. */
+   protected static Set<BugFablesFoodItem> getUnnecessaryItems()
+   {
+   
+      Set<BugFablesFoodItem> foodItems = EnumSet.allOf(BugFablesFoodItem.class);
+      
+      for (BugFablesRecipe recipes : BugFablesRecipe.values())
+      {
+      
+         foodItems.remove(recipes.getRespectiveFoodItem());
+      
+         for (List<BugFablesFoodItem> recipe : recipes.getPossibleRecipes())
+         {
+         
+            foodItems.removeAll(recipe);
+         
+         }
+      
+      }
       
       return foodItems;
    

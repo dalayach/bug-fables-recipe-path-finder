@@ -22,7 +22,7 @@ s#r0bin
 s#t0help
 s#w0canvases
 !208;u
-a0	b196	c255	d%\\011src%smain%sres%sKabbuPosingArmsCrossed.png	f%\011bug-fables-recipe-path-finder.jar	g%\011bug-fables-recipe-path-finder.zip	hManifest-Version\0111.0\011Main-Class\011io.github.dalayach.Main!851;g
+a0	b196	c255	d%\\011src%smain%sres%sKabbuPosingArmsCrossed.png	f%\011bug-fables-recipe-path-finder.jar	g%\011bug-fables-recipe-path-finder.zip	hManifest-Version\0111.0\011Main-Class\011io.github.dalayach.Main!997;g
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sGUIIntro.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sMain.java
@@ -31,12 +31,14 @@ a0	b196	c255	d%\\011src%smain%sres%sKabbuPosingArmsCrossed.png	f%\011bug-fables-
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sCardUseYourOwnItems.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sOutOfBoundsException.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sCardHowMuchInventorySpace.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesPersonalInventory.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sCardRecipeList.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesRecipe.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sCardAllowFoodItemReuse.java
-!851;f
+!997;f
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sGUIIntro.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sMain.java
@@ -45,7 +47,9 @@ a0	b196	c255	d%\\011src%smain%sres%sKabbuPosingArmsCrossed.png	f%\011bug-fables-
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sCardUseYourOwnItems.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sOutOfBoundsException.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sCardHowMuchInventorySpace.java
+%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesPersonalInventory.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sCardRecipeList.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesRecipe.java
 %\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java
@@ -58,5 +62,5 @@ a0	b196	c255	d%\\011src%smain%sres%sKabbuPosingArmsCrossed.png	f%\011bug-fables-
 %\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesRecipeTest.java
 %\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesLocationTest.java
 !2884;t
-jgrJUnit0xr	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java	1601098249606:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesPathFinderTest.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java	1601098249606:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesCookTest.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesShopTest.java	1601098249606:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesPathFinderTest.java	1601098249606:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesCookTest.java	1601098249606:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesFoodItemTest.java	1601098249606:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesFoodItem.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesRecipe.java	1601098249606:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesRecipeTest.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesRecipeTest.java	1601098249606:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesRecipe.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesLocationTest.java	1601098249606:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesFoodItem.java	1601098249606:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesFoodItemTest.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java	1601098249606:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesLocationTest.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java	1601098249606:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesShopTest.java	
+jgrJUnit0xr	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java	1601098249606:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesPathFinderTest.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java	1601098249606:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesCookTest.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesShopTest.java	1601098249606:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesPathFinderTest.java	1601098249606:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesCookTest.java	1601098249606:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesFoodItemTest.java	1601098249606:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesFoodItem.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesRecipe.java	1601352377429:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesRecipeTest.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesRecipeTest.java	1601352377429:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesRecipe.java	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesLocationTest.java	1601098249606:P%\011%u%u%u%u%umain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesFoodItem.java	1601098249606:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesFoodItemTest.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java	1601098249606:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesLocationTest.java	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java	1601098249606:P%\011%u%u%u%u%utest%sjava%sio%sgithub%sdalayach%sBugFablesShopTest.java	
 jgrCheckstyle0xr	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesPathFinder.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesCook.java	1599195793625:P	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesShopTest.java	1599195793625:P	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesFoodItemTest.java	1599195793625:P	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesPathFinderTest.java	1599195793625:P	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesCookTest.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesRecipe.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sMain.java	1599195793625:P	%\011src%stest%sjava%sio%sgithub%sdalayach%sBugFablesLocationTest.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesFoodItem.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesLocation.java	1599195793625:P	%\011src%smain%sjava%sio%sgithub%sdalayach%sBugFablesShop.java	1599195793625:P	
