@@ -327,6 +327,14 @@ public enum BugFablesFoodItem
    
    }
    
+   /** Returns the foodItem that represents the result of this recipe. */
+   public static BugFablesFoodItem getRespectiveFoodItem(BugFablesRecipe recipe)
+   {
+   
+      return BugFablesFoodItem.valueOf(recipe.name());
+   
+   }
+
    /** Returns a set of BugFablesFoodItem that is not used in any recipe, but is also not the result of a recipe. */
    protected static Set<BugFablesFoodItem> getUnnecessaryItems()
    {
@@ -336,7 +344,7 @@ public enum BugFablesFoodItem
       for (BugFablesRecipe recipes : BugFablesRecipe.values())
       {
       
-         foodItems.remove(recipes.getRespectiveFoodItem());
+         foodItems.remove(BugFablesFoodItem.getRespectiveFoodItem(recipes));
       
          for (List<BugFablesFoodItem> recipe : recipes.getPossibleRecipes())
          {

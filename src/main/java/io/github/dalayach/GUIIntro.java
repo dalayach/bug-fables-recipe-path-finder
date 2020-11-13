@@ -25,6 +25,7 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
    
 /** Class that houses the primary GUI the user will be interacting with. Houses all "cards." */
@@ -70,13 +71,15 @@ public class GUIIntro implements ActionListener
          + "names will be spoiled)"
          + "</p></html>";
          
-   public final ImageIcon icon;
+   public final ImageIcon dialogIcon;
+   public final ImageIcon windowIcon;
 
    /** Constructor. */
-   public GUIIntro(ImageIcon icon) 
+   public GUIIntro(ImageIcon dialogIcon, ImageIcon windowIcon) 
    {
    
-      this.icon = icon;
+      this.dialogIcon = dialogIcon;
+      this.windowIcon = windowIcon;
    
       //ask user if they want to AVOID SPOILERS
       switch(JOptionPane.showConfirmDialog(
@@ -85,7 +88,7 @@ public class GUIIntro implements ActionListener
          "Bug Fables Recipe Path Finder!",
          JOptionPane.YES_NO_CANCEL_OPTION,
          JOptionPane.QUESTION_MESSAGE,
-         icon
+         dialogIcon
          ))
       {
       
@@ -152,8 +155,8 @@ public class GUIIntro implements ActionListener
       //program should end when we close
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       
-      //set the top left icon for the application
-      frame.setIconImage(this.icon.getImage());
+      //set the top left dialogIcon for the application
+      frame.setIconImage(this.windowIcon.getImage());
    
       //width, height
       frame.setSize(700, 400);
@@ -237,7 +240,16 @@ public class GUIIntro implements ActionListener
                break;
             case FINISH:
                if (this.isCurrentCard(this.listOfCards.get(this.listOfCards.size() - 1)))
-               { cardLayout.next(parentCard); }
+               {
+               
+                  Date start = new Date();
+                  AlgorithmPathFinder.findBestPathway(this.recipeListCard.getAnswers());
+                  cardLayout.next(parentCard);
+                  Date end = new Date();
+                  
+                  System.out.println("Time difference = " + (end.getTime() - start.getTime()) + " ms");
+               
+               }
                break;
             default:
                break;

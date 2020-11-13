@@ -529,14 +529,21 @@ public enum BugFablesRecipe
    
    }
    
-   /** Returns the foodItem that represents the result of this recipe. */
-   public BugFablesFoodItem getRespectiveFoodItem()
+   /** Return the BugFablesRecipe associated with this foodItem, or simply return null if there is none. */
+   public static BugFablesRecipe getRespectiveRecipe(BugFablesFoodItem foodItem)
    {
    
-      return BugFablesFoodItem.valueOf(this.name());
+      if (foodItem.getRecipeId() != 0)
+      {
+      
+         return BugFablesRecipe.valueOf(foodItem.name());
+      
+      }
+   
+      return null;
    
    }
-
+   
    /** Returns an alphabetically ordered array of recipes. */
    public static BugFablesRecipe[] listOfOrderedRecipes()
    {

@@ -21,18 +21,24 @@ public class Main
    	// we will definitely need a unit test as well (to ensure that things are ACTUALLY as optimal as they should be).
       
       
-      /** putting an icon for the prompt and the application window -- BE SURE NOT TO USE AN IMAGE CONTAINING SPOILERS. */
-      String imageName = "KabbuPosingArmsCrossed.png";
+      /** Putting an image for the dialog prompt -- BE SURE NOT TO USE AN IMAGE CONTAINING SPOILERS. */
+      String dialogImageName = "KabbuPosingArmsCrossed.png";
+      /** Putting an icon for the window and the toolbar -- BE SURE NOT TO USE AN IMAGE CONTAINING SPOILERS. */
+      String windowImageName = "KabbuHead.png";
       
-      BufferedImage oldIcon = this.fetchImage(new File(""), imageName);
+      BufferedImage dialogImage = this.fetchImage(new File(""), dialogImageName);
+      BufferedImage windowImage = this.fetchImage(new File(""), windowImageName);
       
-      if (oldIcon != null)
+      if (dialogImage != null)
       {
       
-         ImageIcon icon =
-            new ImageIcon(oldIcon.getScaledInstance(oldIcon.getWidth() / 10, oldIcon.getHeight() / 10, Image.SCALE_SMOOTH));
+         ImageIcon dialogImageIcon =
+            new ImageIcon(dialogImage.getScaledInstance(dialogImage.getWidth() / 10, dialogImage.getHeight() / 10, Image.SCALE_SMOOTH));
       
-         GUIIntro guiIntro = new GUIIntro(icon);
+         ImageIcon windowImageIcon =
+            new ImageIcon(windowImage.getScaledInstance(windowImage.getWidth(), windowImage.getHeight(), Image.SCALE_SMOOTH));
+      
+         GUIIntro guiIntro = new GUIIntro(dialogImageIcon, windowImageIcon);
       
       }
       

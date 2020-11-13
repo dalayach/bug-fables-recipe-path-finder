@@ -5,6 +5,17 @@ import javax.swing.SpringLayout;
 import java.awt.Component;
 import java.awt.Container;
  
+ 
+ 
+ 
+ /**
+  * 
+  * Java is great, but complicated GUI's are not easy for me. So, I copy and pasted this class.
+  *
+  */
+ 
+ 
+ 
 /**
  * A 1.4 file that provides utility methods for
  * creating form- or grid-style layouts with SpringLayout.

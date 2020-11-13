@@ -61,7 +61,7 @@ public class CardRecipeList extends JScrollPane
          checkBoxName += "</html>";
       
          //add JCheckBox to the JPanel -- as the JPanel gets bigger within the JScrollPane, the JScrollPane will add a
-         //scroll wheel to the left in order for 
+         //scroll wheel to the right to allow the user to scroll to that content 
          mainPanel.add(new JCheckBox(checkBoxName));
       
       }
@@ -81,10 +81,28 @@ public class CardRecipeList extends JScrollPane
       for (Component component : mainPanel.getComponents())
       {
       
-         if (((JCheckBox) component).isSelected())
-         {
+         if (component instanceof JCheckBox) {
          
-            recipes.add(Enum.valueOf(BugFablesRecipe.class, ((JCheckBox) component).getText()));
+            JCheckBox checkBox = (JCheckBox) component;
+         
+            if (checkBox.isSelected())
+            {
+            
+               String enumName = new String(checkBox.getText());
+            
+               System.out.println(enumName);
+            
+               if (!enumName.replaceAll("[^A-Z_]", "").isEmpty())
+               {
+                  recipes.add(BugFablesRecipe.valueOf(enumName.replaceAll("[^A-Z_]", "")));
+               }
+               
+               else
+               {
+                  recipes.add(BugFablesRecipe.values()[Integer.parseInt(enumName.replaceAll("[^0-9]", ""))]);
+               }
+            
+            }
          
          }
       
