@@ -10,7 +10,7 @@ And that's where this project comes in. I had considered creating a manual, hand
 
 Instead, I decided to create this program to address that concern. You click the checkboxes next to the list of items you want to make, then enter in how much inventory space you have (or are willing to use), then the program will plot out your path for you!
 
-Obviously, this program is not flawless. I would LOVE AND APPRECIATE any criticism or feedback on this! Please give any advice you can! But my goal here is to provide a feature to help make 100%'ing the game a lot less tedious.
+Obviously, this program is not flawless. But my goal here is to provide a feature to help make 100%'ing the game a lot less tedious. CRITICISM AND/OR FEEDBACK IS ALWAYS APPRECIATED!
 
 Some notes about how I implemented this
  - I paid NO attention to price when making this. Frankly, the bank is ridiculously overpowered in this game, so I will be assuming that money is never a problem.
