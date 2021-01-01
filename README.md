@@ -1,5 +1,7 @@
 # bug-fables-recipe-path-finder
 
+UNFINISHED -- I will update this as changes are made, but right now, it is unfinished and still in progress.
+
 This is a Java project that helps you unlock all of the remaining Bug Fables Recipes in your cookbook.
 
 A common point of tedium amongst Bug Fables players is how unintuitive the recipes are, so as a result, most players finish the game with the cookbook mostly unfinished. Obviously, many players wish to 100% the game, but not all want to drag themselves through the slog of buying and cooking each recipe one at a time to unlock everything.
@@ -13,4 +15,4 @@ Obviously, this program is not flawless. I would LOVE AND APPRECIATE any critici
 Some notes about how I implemented this
  - I paid NO attention to price when making this. Frankly, the bank is ridiculously overpowered in this game, so I will be assuming that money is never a problem.
  - I am assuming you have access to ALL locations and tunnels in Bug Fables. You will be using almost all tunnels and locations if you wish to be optimal, so this is a must.
- - Physical walk distance is not considered. I considered the tunnel center the central point and considered each location equidistant from that tunnel center. For example, the Golden Settlement Caravan is much closer to the Tunnel Center than the Bee Hive Factory Gift Shop, but as far as this algorithm is concerned, they are both the same distance from the Tunnel Center. Priority will be given to the location you are currently in. If you grabbed the last item you need for a batch at the Golden Emporium, it will send you to Kut for any cooking you need to do. This is because Kut is next to the Golden Emporium. Obviously, the code will check if Kut can actually MAKE all the items in your batch, but other than that, it will always prioritize your current location before sending you anywhere else to bake.
+ - Physical walk distance is not considered. I am treating the tunnel center as the central point and treating each location as equidistant from that tunnel center. For example, the Golden Settlement Caravan is much closer to the Tunnel Center than the Bee Hive Factory Gift Shop, but as far as this algorithm is concerned, they are both the same distance from the Tunnel Center. Priority will be given to the location you are currently in. If you grabbed the last item you need for a batch at the Golden Emporium, it will send you to Kut for any cooking you need to do. This is because Kut is next to the Golden Emporium. Obviously, the code will check if Kut can actually MAKE all the items in your batch, but other than that, it will always prioritize your current location before sending you anywhere else to bake.
