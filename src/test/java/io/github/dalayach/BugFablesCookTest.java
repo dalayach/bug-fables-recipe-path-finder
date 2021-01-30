@@ -19,7 +19,7 @@ public class BugFablesCookTest {
       Assert.assertEquals(EnumSet.of(BugFablesCook.FRY), BugFablesCook.findCooksByLocation(BugFablesLocation.ANT_CITY));
    	
    	/** GOLDEN_SETTLEMENT */
-      Assert.assertEquals(EnumSet.of(BugFablesCook.KUT, BugFablesCook.ALL),
+      Assert.assertEquals(EnumSet.of(BugFablesCook.KUT),
          BugFablesCook.findCooksByLocation(BugFablesLocation.GOLDEN_SETTLEMENT));
    	
    	/** DEFIANT_ROOT */

@@ -75,7 +75,7 @@ public class CardAllowFoodItemReuse extends JScrollPane
          
       label += (!spoilersAllowed ? "</html>"
          : 
-         "<p>For example, let's say you need to make a Glazed Honey and a Crisbee Donut."
+         "<p>For example, let's say that the 2 recipes you need to create are a Glazed Honey and a Crisbee Donut."
          + "</p><p></p>"
          + "<p>A Glazed Honey is made by cooking a Honey Drop.</p><p> A "
          + "Crisbee Donut is made by cooking a Glazed Honey and a "
@@ -83,7 +83,7 @@ public class CardAllowFoodItemReuse extends JScrollPane
          + "<p>Do you want to first make the Glazed Honey, then use that same Glazed Honey"
          + " you made as an ingredient in the Crisbee Donut? Or do you want to keep that "
          + "Glazed Honey for yourself, and make another Glazed Honey for the "
-         + "Crisbee Donut?<b>Check the box if you want to use the foodItems you make as ingredients"
+         + "Crisbee Donut?<p></p><p>Check the box below if you want to use the foodItems you make as ingredients"
          + " for other foodItems (only cook 1 Glazed Honey). Leave it unchecked if you want to keep the "
          + "ingredients for yourself (have to cook 2 Glazed Honeys, since you will be keeping the first "
          + "and cooking the other)."

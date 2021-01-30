@@ -46,15 +46,15 @@ public class CardRecipeList extends JScrollPane
       
    
       //putting all of the items on a scrollable list of checkboxes
-      for (BugFablesRecipe recipe : BugFablesRecipe.values())
+      for (BugFablesRecipeBook recipeBook : BugFablesRecipeBook.values())
       {
       
-         String checkBoxName = "<html>" + (recipe.ordinal() + 1);
+         String checkBoxName = "<html>" + recipeBook.getRecipeBookId();
       
          if (spoilersAllowed)
          {
          
-            checkBoxName += "&emsp;" + recipe.name();
+            checkBoxName += "&emsp;" + recipeBook.name();
          
          }
          
@@ -73,10 +73,10 @@ public class CardRecipeList extends JScrollPane
    }
    
    /** Returns the Set of recipes that the user chose. */
-   public final Set<BugFablesRecipe> getAnswers()
+   public final Set<BugFablesRecipeBook> getAnswers()
    {
    
-      Set<BugFablesRecipe> recipes = EnumSet.noneOf(BugFablesRecipe.class);
+      Set<BugFablesRecipeBook> recipeBooks = EnumSet.noneOf(BugFablesRecipeBook.class);
       
       for (Component component : mainPanel.getComponents())
       {
@@ -94,12 +94,12 @@ public class CardRecipeList extends JScrollPane
             
                if (!enumName.replaceAll("[^A-Z_]", "").isEmpty())
                {
-                  recipes.add(BugFablesRecipe.valueOf(enumName.replaceAll("[^A-Z_]", "")));
+                  recipeBooks.add(BugFablesRecipeBook.valueOf(enumName.replaceAll("[^A-Z_]", "")));
                }
                
                else
                {
-                  recipes.add(BugFablesRecipe.values()[Integer.parseInt(enumName.replaceAll("[^0-9]", ""))]);
+                  recipeBooks.add(BugFablesRecipeBook.values()[Integer.parseInt(enumName.replaceAll("[^0-9]", "")) - 1]);
                }
             
             }
@@ -108,7 +108,7 @@ public class CardRecipeList extends JScrollPane
       
       }
       
-      return recipes;
+      return recipeBooks;
    
    }
    

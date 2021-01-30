@@ -82,7 +82,8 @@ public class Main
 	 */
    public static void main(String[] args)
    {
-   
+      
+      ScratchPad sp = new ScratchPad();
       Main main = new Main();
    
    }

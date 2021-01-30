@@ -52,7 +52,7 @@ public class BugFablesShopTest
    {
    
    	/** Always test the null case! */
-      Assert.assertEquals(BugFablesShop.findShopsByPurchasableItems(null), EnumSet.noneOf(BugFablesShop.class));
+      Assert.assertEquals(BugFablesShop.findShopsContainingAnyPurchasableItems(null), EnumSet.noneOf(BugFablesShop.class));
    
       for (BugFablesFoodItem foodItem : BugFablesFoodItem.values())
       {

@@ -12,12 +12,12 @@ public class BugFablesRecipeTest {
 
    /** A test to make sure the names for the foodItems and recipes match. */
    @Test
-   public void testIfFoodItemNameMatchesRecipeName() {
+   public void test_FIX_THIS_NAME() {
    
-      for (BugFablesRecipe recipe : BugFablesRecipe.values())
+      for (BugFablesRecipeBook recipeBook : BugFablesRecipeBook.values())
       {
       
-         Assert.assertEquals(BugFablesFoodItem.findFoodItemByRecipe(recipe), BugFablesFoodItem.valueOf(recipe.name()));
+         Assert.assertEquals(BugFablesFoodItem.getRespectiveFoodItem(recipeBook), BugFablesFoodItem.valueOf(recipeBook.name()));
       
       }
    

@@ -1,6 +1,7 @@
 package io.github.dalayach;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.EnumSet;
 import java.util.Set;
 
@@ -186,9 +187,9 @@ public enum BugFablesShop
    ;
    
 	/** Location of the shop. */
-   private BugFablesLocation location;
-   /** Set of purchasable items at each shop. Empty for now. EnumSet for space efficiency. */
-   private Set<BugFablesFoodItem> purchasableItems = EnumSet.noneOf(BugFablesFoodItem.class);
+   private final BugFablesLocation location;
+   /** Set of purchasable items at each shop. */
+   private final Set<BugFablesFoodItem> purchasableItems;
    
    /** Constructor. */
    BugFablesShop(BugFablesLocation location, BugFablesFoodItem... purchasableItems)
@@ -196,7 +197,7 @@ public enum BugFablesShop
    
       this.location = location;
       /** EnumSet makes this very space efficient. */
-      this.purchasableItems = EnumSet.copyOf(Arrays.asList(purchasableItems));
+      this.purchasableItems = Collections.unmodifiableSet(EnumSet.copyOf(Arrays.asList(purchasableItems)));
    
    }
    
@@ -273,8 +274,35 @@ public enum BugFablesShop
    
    }
    
-   /** Returns a Set of shops containing any of the given foodItems. */
-   protected static Set<BugFablesShop> findShopsByPurchasableItems(Set<BugFablesFoodItem> foodItems)
+   /** Returns a Set of shops, with each containing ALL of the given foodItems. */
+   protected static Set<BugFablesShop> findShopsContainingAllPurchasableItems(Set<BugFablesFoodItem> foodItems)
+   {
+   
+      Set<BugFablesShop> shops = EnumSet.noneOf(BugFablesShop.class);
+   
+      if (foodItems != null)
+      {
+      
+         for (BugFablesShop shop : BugFablesShop.values())
+         {
+         
+            if (shop.getPurchasableItems().containsAll(foodItems))
+            {
+            
+               shops.add(shop);
+            
+            }
+         
+         }
+      
+      }
+   
+      return shops;
+   
+   }
+   
+   /** Returns a Set of shops, with each containing ONE OR MORE of the given foodItems. */
+   protected static Set<BugFablesShop> findShopsContainingAnyPurchasableItems(Set<BugFablesFoodItem> foodItems)
    {
    
       Set<BugFablesShop> shops = EnumSet.noneOf(BugFablesShop.class);
@@ -295,7 +323,7 @@ public enum BugFablesShop
    
    }
    
-   /** Returns a Set of shops containing the given foodItem. */
+   /** Returns a Set of shops, with each containing the given foodItems. */
    protected static Set<BugFablesShop> findShopsByPurchasableItem(BugFablesFoodItem foodItem)
    {
    
@@ -321,7 +349,7 @@ public enum BugFablesShop
    public String toString()
    {
    
-      return this.name() + "(" + this.location + ", " + this.purchasableItems.toString() + ")";
+      return this.name();
    
    }
 

@@ -43,7 +43,7 @@ public enum BugFablesLocation
 	 * - purchasableFoodItems
 	 * 
 	 */
-   private boolean containsPointsOfImportance;
+   private final boolean containsPointsOfImportance;
 	
    /** Constructor. */
    BugFablesLocation(boolean containsPointsOfImportance)
@@ -70,7 +70,7 @@ public enum BugFablesLocation
       if (foodItems != null)
       {
       
-         for (BugFablesShop shop : BugFablesShop.findShopsByPurchasableItems(foodItems))
+         for (BugFablesShop shop : BugFablesShop.findShopsContainingAnyPurchasableItems(foodItems))
          {
          
             locations.add(shop.getLocation());

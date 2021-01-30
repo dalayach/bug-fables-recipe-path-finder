@@ -70,87 +70,29 @@ public class BugFablesFoodItemTest {
    }
    
    @Test
-   public void testFindFoodItemsByCook()
-   {
-   
-      /** Always test the null case! */
-      Assert.assertEquals(EnumSet.noneOf(BugFablesFoodItem.class), BugFablesFoodItem.findFoodItemsByCook(null));
-      
-      for (BugFablesCook cook : BugFablesCook.values())
-      {
-      
-         this.testFindFoodItemsByCook(cook);
-      
-      }
-   
-   }
-   
-   public void testFindFoodItemsByCook(BugFablesCook cook)
-   {
-   
-      Set<BugFablesFoodItem> foodItems = BugFablesFoodItem.findFoodItemsByCook(cook);
-      
-      for (BugFablesFoodItem foodItem : foodItems)
-      {
-      
-         Assert.assertTrue(foodItem.getCook() == cook || foodItem.getCook() == BugFablesCook.ALL);
-      
-      }
-      
-      for (BugFablesFoodItem foodItem : EnumSet.complementOf(EnumSet.copyOf(foodItems)))
-      {
-      
-         Assert.assertFalse(foodItem.getCook() == cook || foodItem.getCook() == BugFablesCook.ALL);
-      
-      }
-   
-   }
-   
-   @Test
-   public void testNoDuplicateRecipeIds()
-   {
-   
-      final BugFablesFoodItem lastItem = BugFablesFoodItem.values()[BugFablesFoodItem.values().length - 1];
-   
-      for (BugFablesFoodItem foodItem1 : BugFablesFoodItem.values())
-      {
-      
-         for (BugFablesFoodItem foodItem2 : EnumSet.range(foodItem1, lastItem))
-         {
-         
-         //remember, 0 represents an item that cannot be made. Therefore, several items have 0, and thus, no need to compare.
-            if (foodItem1 != foodItem2 && foodItem1.getRecipeId() != 0 && foodItem1.getRecipeId() == foodItem2.getRecipeId())
-            {
-            
-               Assert.fail("No duplicate recipeIds allowed!"
-                  + "\n" + foodItem1.getRecipeId() + "\tfoodItem1 = " + foodItem1.name() 
-                  + "\n" + foodItem2.getRecipeId() + "\tfoodItem2 = " + foodItem2.name());
-            
-            }
-         
-         }
-      
-      }
-   
-   }
-   
-   @Test
    public void testGetAllFoodItemsContainingRecipes()
    {
    
       Set<BugFablesFoodItem> foodItems = BugFablesFoodItem.getAllFoodItemsContainingRecipes();
    
-      for (BugFablesFoodItem foodItem : foodItems)
-      {
-      
-         Assert.assertTrue(foodItem.getRecipeId() != 0);
-      
-      }
-      
       for (BugFablesFoodItem foodItem : EnumSet.complementOf(EnumSet.copyOf(foodItems)))
       {
       
-         Assert.assertTrue(foodItem.getRecipeId() == 0);
+         boolean threwException = false;
+      
+         try
+         {
+         
+            BugFablesRecipeBook.getRespectiveRecipeBook(foodItem);
+         
+         } catch (IllegalArgumentException iae)
+         {
+         
+            threwException = true;
+         
+         }
+      
+         Assert.assertTrue(threwException);
       
       }
    
