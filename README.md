@@ -1,5 +1,14 @@
 # bug-fables-recipe-path-finder
 
+<script src="https://www.java.com/js/deployJava.js"></script>
+<script>
+    var url = "https://dalayach.github.io/TestClass.jnlp";
+    deployJava.createWebStartLaunchButton(url, '1.6.0');
+</script>
+
+And if you can't see the orange "Launch" box, click <a href="TestClass.jnlp">HERE</a> instead!
+
+
 UNFINISHED -- I will update this as changes are made, but right now, it is unfinished and still in progress.
 
 This is a Java project that helps you unlock all of the remaining Bug Fables Recipes in your cookbook.
